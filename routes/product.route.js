@@ -24,7 +24,7 @@ productRoutes.route('/add').post(function (req, res) {
 });
 
 
-// Product finding from the database using get mathoud 
+//All Product finding from the database using get mathoud 
 productRoutes.route('/').get(function (req, res) {
     Product.find(function (err, products){
         if(err) {
@@ -38,7 +38,7 @@ productRoutes.route('/').get(function (req, res) {
 
 
 
-//Edit route
+//Find one product from the database using get method also using id
 productRoutes.route('/id/:id').get(function (req, res) {
     let id = req.params.id;
     Product.findById(id, function (err, product){

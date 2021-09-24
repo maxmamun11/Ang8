@@ -12,7 +12,7 @@ let Product = new Schema({
         type: Number
     }
 },{
-    collection: 'Product'
+    collaction: 'Product'
 });
 
 module.exports = mongoose.model('Product', Product);
